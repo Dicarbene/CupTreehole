@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Readex Pro"', 'ui-sans-serif','system-ui','-apple-system','BlinkMacSystemFont', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
     },
   },
