@@ -1,10 +1,23 @@
+<script setup>
+  import { usePostStore } from '../stores/posts'
+  import { faker } from '@faker-js/faker';
+  import { ref } from 'vue';
+  const postData = usePostStore;
+  const para = ref(faker.lorem.paragraph(2));
+  const title = ref(faker.lorem.sentence());
+  console.log(postData.posts);
+</script>
 <template>
-    <article
-        class="flex text-slate-700 text-mono border-2 border-white ml-4 mr-auto bg-gradient-to-r from-amber-100 to-fuchsia-50"
-    >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-        possimus, placeat voluptas maxime laudantium earum soluta, necessitatibus
-        sit consequatur nisi similique ipsum! Perferendis, est soluta! Culpa
-        perferendis dolorum id cupiditate!
-    </article>
+  <div class="card lg:card-side bg-base-100 shadow-xl">
+    <figure>
+      <img src="https://api.lorem.space/image/album?w=200&h=200" alt="Album" />
+    </figure>
+    <div class="card-body flex-wrap">
+      <h2 class="card-title">{{title}}</h2>
+      <p>{{ para }}</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">More</button>
+      </div>
+    </div>
+  </div>
 </template>

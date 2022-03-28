@@ -9,7 +9,7 @@ import HeaderT from '../components/HeaderT.vue'
 </script>
 
 <template>
-  <main class="flex flex-row">
+  <main class="flex flex-row justify-between">
     <NavT />
     <SectionT />
     <AsideT />
