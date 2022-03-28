@@ -26,7 +26,7 @@
     "@types/tailwindcss": "^3.0.9",
     "@vitejs/plugin-vue": "^2.2.4",
     "autoprefixer": "^10.4.4",
-    "daisyui": "^2.13.2",
+    "daisyui": "^2.13.3",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
     "postcss": "^8.3.3",
