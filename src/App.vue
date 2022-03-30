@@ -2,7 +2,7 @@
 import HeaderT from './components/HeaderT.vue'
 </script>
 <template>
-  <div class="dark:bg-slate-900 flex flex-col">
+  <div data-theme="cupcake" class="bg-default flex flex-col">
     <headerT />
     <router-view></router-view>
   </div>

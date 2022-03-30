@@ -1,6 +1,5 @@
 import { defineStore } from "pinia";
 import { faker } from "@faker-js/faker";
-import { objectPosition } from "tailwindcss/defaultTheme";
 // useStore could be anything like useUser, useCart
 // the first argument is a unique id of the store across your application
 
@@ -31,4 +30,9 @@ export const usePostStore = defineStore("posts", {
       postAll : posts,
     }
   },
+  actions: {
+  },
+  getters: {
+    
+  }
 });

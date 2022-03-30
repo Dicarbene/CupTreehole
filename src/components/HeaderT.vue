@@ -1,18 +1,9 @@
 <script setup>
-/* 
-  <header>
-    <div class="mr-auto px-3 py-1 sm:px-6 lg:px-8 flex flex-row">
-      <button
-        class="btn border-solid text-2xl font-sans font-extrabold leading-loose text-slate-900 dark:text-white"
-        @click
-      >Treehole</button>
-    </div>
-  </header>
-*/
+
 </script>
 
 <template>
-  <div class="navbar bg-base">
+  <div class="navbar bg-base-100 backdrop-blur">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">

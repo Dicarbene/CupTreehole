@@ -1,3 +1,3 @@
 <template>
-    <p class="text-white">test</p>
+    <p class="text-info">test</p>
 </template>
