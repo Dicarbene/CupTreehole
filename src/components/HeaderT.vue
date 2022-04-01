@@ -1,9 +1,19 @@
 <script setup>
+import LoginButton from './Buttons/LoginButton.vue';
+import { useRouter, useRoute } from 'vue-router'
+const router = useRouter();
+const route = useRoute();
 
+const backHome = () => {
+  router.push('/');
+}
+const toBoard = () =>{
+  router.push('/board');
+}
 </script>
 
 <template>
-  <div class="navbar bg-base-100 backdrop-blur">
+  <div class="navbar bg-base-100 opacity-90 backdrop-blur text-sans ">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -56,12 +66,14 @@
           </li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl">CupTreehole</a>
+      <a @click="backHome" class="btn btn-ghost normal-case text-xl text-bold">CupTreehole</a>
     </div>
     <div class="navbar-center hidden lg:flex">
+    </div>
+    <div class="navbar-end">
       <ul class="menu menu-horizontal p-0">
         <li>
-          <a>Item 1</a>
+          <a @click="toBoard">Board</a>
         </li>
         <li tabindex="0">
           <a>
@@ -89,8 +101,6 @@
           <a>Item 3</a>
         </li>
       </ul>
-    </div>
-    <div class="navbar-end">
       <a class="btn">Login</a>
     </div>
   </div>
