@@ -6,6 +6,9 @@ import SectionT from '../components/SectionT.vue'
 import NavT from '../components/NavT.vue'
 import HeaderT from '../components/HeaderT.vue'
 import testView from '../components/testView.vue'
+import { useRouter, useRoute } from 'vue-router'
+const router = useRouter();
+const route = useRoute();
 /*
 
     <svg
@@ -21,6 +24,9 @@ import testView from '../components/testView.vue'
       />
     </svg>
 */
+const toBoard = () =>{
+  router.push('/board');
+}
 </script>
 
 <template>
@@ -29,7 +35,7 @@ import testView from '../components/testView.vue'
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
       <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-primary" @click="toBoard()">Get Started</button>
     </div>
   </div>
   </main>
