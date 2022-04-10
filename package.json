@@ -3,7 +3,7 @@
   "author": {
     "name": "Xujie Wan",
     "email": "michaelnatvollhardt@gmail.com"},
-  "version": "0.1.0",
+  "version": "0.1.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
