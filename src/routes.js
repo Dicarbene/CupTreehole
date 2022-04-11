@@ -28,6 +28,6 @@ export const routes = [
     path: "/board",
     component: Board,
     meta: { title: "Post Board" },
-  }
-  /*{ path: "/:path(.*)", component: NotFound },*/
+  },
+  { path: "/:path(.*)", component: NotFound },
 ];
