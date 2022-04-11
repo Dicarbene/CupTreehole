@@ -1,11 +1,9 @@
-import Home from "./views/Home.vue";
-import App from "./App.vue";
-import ButtonRepo from "./components/ButtonRepo.vue";
-import About from "./views/About.vue";
-import NotFound from "./views/NotFound.vue";
-import testView from "./components/testView.vue";
-import Board from './views/Board.vue';
 
+const Home = () => import("./views/Home.vue");
+const About = () => import("./views/About.vue");
+const NotFound = () => import("./views/NotFound.vue");
+const testView = () => import("./components/testView.vue");
+const Board = () => import("./views/Board.vue");
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
